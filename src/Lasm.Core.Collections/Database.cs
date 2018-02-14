@@ -296,8 +296,8 @@ namespace Lasm.Core.Collections
 
            this.cells = newDatabase.cells;
             this.rows = newDatabase.cells[newDatabase.cells.Count].row;
-            this.columns = databaseIn.GetValue<Database>().columns - columns.GetValue<int>();
-            newDatabase.depth = databaseIn.GetValue<Database>().depth;
+            this.columns = this.columns- columns;
+            newDatabase.depth = this.depth;
 
             database = this;
         }

@@ -16,8 +16,7 @@ namespace Lasm.BoltAddons.UnitTools.Events
 
         public void Initialize(out bool complete)
         {
-            if (gameObject)
-            complete = true;
+            complete = gameObject != null;
         }
 
         public void Clear()
